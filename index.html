@@ -6,7 +6,96 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Фото и видео</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Карта штата</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link">Гостиницы</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <a>
+            <img src="img.png" alt="" width="200" height="200">
+          </a>
+        </div>
+      </header>
+
+      <div class="mainlogo">
+        <img src="img.png" alt="" width="455" height="370">
+      </div>
+
+      <article class="aboutus">
+        <header class="aboutus__header">
+          <h1 class="aboutus__title">Седона - небольшой городок в аризоне,заслуживающий большего!</h1>
+          <p class="aboutus__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </header>
+      </article>
+
+      <div class="seacrch">
+        <h2 class="search__title">Заинтересовались?</h2>
+        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне!</p>
+        <button type="button" class="button__search">Поиск гостиницы в седоне</button>
+      </div>
+
+      <div class="search-form">
+        <form action="/echo" method="POST">
+        <div class="search-form__row">
+          <label for="from" class="search-form__1">Дата заезда:</label>
+          <input id="from" type="text" class="search-form__2">
+          <button type="button" class="search-form__calendar">Календарь</button>
+        </div>
+        <div class="search-form__row">
+            <label for="to" class="search-form__1">Дата выезда:</label>
+            <input id="to" type="text" class="search-form__2">
+            <button type="button" class="search-form__calendar">Календарь</button>
+        </div>
+        <div class="search-form__row">
+            <div class="search-form__col">
+                <label for="number_1" class="search-form__1">Взрослые:</label>
+                <div class="number">
+                  <button class="number1_minus">Минус</button>
+                  <input id="number_1" type="text" class="number__field">
+                  <button class="number1_plus">Плюс</button>
+                </div>
+            </div>
+            <div class="search-form__col">
+                <label for="number_2" class="search-form__1">Дети:</label>
+                <div class="number">
+                  <button class="number1_minus">Минус</button>
+                  <input id="number_2" type="text" class="number__field">
+                  <button class="number1_plus">Плюс</button>
+                </div>
+            </div>
+          </div>
+          </form>
+        </div>
+
+          <footer class="footer">
+            <div class="footer__col">
+              <a href="#" class="hashtag">#visitsedona</a>
+            </div>
+            <div class="footer__col">
+              <div class="social">
+                <a href="#" class="social__button-twit">Twitter</a>
+                <a href="#" class="social__button-fb">Facebook</a>
+                <a href="#" class="social__button-you">Youtube</a>
+            </div>
+            <div class="footer__col">
+              <div class="copyright">
+                Website by 
+                <a href="#" class="copyright__link">
+                  <img src="img.png" alt="" width="100" height="50">
+                </a>
+              </div>
+            </div>
+          </div>
+          </footer>
+
+
+      </div>
 
   </body>
 </html>
