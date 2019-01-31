@@ -27,46 +27,41 @@
         </header>
       </article>
 
-      <div class="seacrch">
+      <div class="search">
         <h2 class="search__title">Заинтересовались?</h2>
         <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне!</p>
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
-      </div>
-
-      <div class="search-form">
-        <div class="search">
         <form action="/echo" method="POST">
-        <div class="search-form__row">
-          <label for="from" class="search-form__1">Дата заезда:</label>
-          <input id="from" type="text" class="search-form__2">
-          <button type="button" class="search-form__calendar">Календарь</button>
-        </div>
-        <div class="search-form__row">
-            <label for="to" class="search-form__1">Дата выезда:</label>
-            <input id="to" type="text" class="search-form__2">
+          <div class="search-form__row">
+            <label for="from" class="search-form__1">Дата заезда:</label>
+            <input id="from" type="text" class="search-form__2">
             <button type="button" class="search-form__calendar">Календарь</button>
-        </div>
-        <div class="search-form__row">
-            <div class="search-form__col">
-                <label for="number_1" class="search-form__1">Взрослые:</label>
-                <div class="number">
-                  <button class="number1_minus">Минус</button>
-                  <input id="number_1" type="text" class="number__field">
-                  <button class="number1_plus">Плюс</button>
-                </div>
-            </div>
-            <div class="search-form__col">
-                <label for="number_2" class="search-form__1">Дети:</label>
-                <div class="number">
-                  <button class="number1_minus">Минус</button>
-                  <input id="number_2" type="text" class="number__field">
-                  <button class="number1_plus">Плюс</button>
-                </div>
-            </div>
           </div>
-          </form>
+          <div class="search-form__row">
+              <label for="to" class="search-form__1">Дата выезда:</label>
+              <input id="to" type="text" class="search-form__2">
+              <button type="button" class="search-form__calendar">Календарь</button>
           </div>
-        </div>
+          <div class="search-form__row">
+              <div class="search-form__col">
+                  <label for="number_1" class="search-form__1">Взрослые:</label>
+                  <div class="number">
+                    <button class="number1_minus">Минус</button>
+                    <input id="number_1" type="text" class="number__field">
+                    <button class="number1_plus">Плюс</button>
+                  </div>
+              </div>
+              <div class="search-form__col">
+                  <label for="number_2" class="search-form__1">Дети:</label>
+                  <div class="number">
+                    <button class="number1_minus">Минус</button>
+                    <input id="number_2" type="text" class="number__field">
+                    <button class="number1_plus">Плюс</button>
+                  </div>
+              </div>
+            </div>
+            </form>
+      </div>
 
         <footer class="footer">
           <a href="#" class="hashtag">#visitsedona</a>
