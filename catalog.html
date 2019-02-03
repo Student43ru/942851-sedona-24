@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -15,9 +16,9 @@
             <li class="menu__item"><a href="#" class="menu__link">Карта штата</a></li>
             <li class="menu__item active"><a class="menu__link">Гостиницы</a></li>
           </ul>
-          <a href="index.html">
-            <img src="img.png" alt="" width="200" height="200">
-          </a>
+          <a class="logo" href="index.html">
+              <img class="logo__img" src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo">
+            </a>
         </nav>
       </header>
 
@@ -25,7 +26,7 @@
       <ul class="hotels">
 
         <li class="hotel_info">
-          <img src="img.png" alt="" width="200" height="100">
+          <img src="img/hotel1.jpg" alt="Amara Resort and Spa">
           <div class="hotel__content">
           <h2 class="hotel__title"><a class="hotel__link" href="#">Amara resort & spa</a></h2>
           <div class="hotel__block">
@@ -44,7 +45,7 @@
         </liv>
 
         <li class="hotel_info">
-            <img src="img.png" alt="" width="200" height="100">
+            <img src="img/hotel2.jpg" alt="Desert Quail Inn">
             <div class="hotel__content">
             <h2 class="hotel__title"><a class="hotel__link" href="#">Desert quail inn</a></h2>
             <div class="hotel__block">
@@ -63,7 +64,7 @@
           </liv>
 
           <li class="hotel_info">
-              <img src="img.png" alt="" width="200" height="100">
+              <img src="img/hotel3.jpg" alt="Villas at Poco Diablo">
               <div class="hotel__content">
               <h2 class="hotel__title"><a class="hotel__link" href="#">Villas at poco diablo</a></h2>
               <div class="hotel__block">
@@ -83,26 +84,23 @@
 
       </ul>
       
-        <footer class="footer">
-           <a href="#" class="hashtag">#visitsedona</a>
-              <ul>
-                <li>
-                  <a href="#" class="social__button">Twitter</a>
-                </li>
-                <li>
-                  <a href="#" class="social__button">Facebook</a>
-                </li>
-                <li>
-                  <a href="#" class="social__button">Youtube</a>
-                </li>
-              </ul>
-            <div class="copyright">
-              Website by 
-              <a href="#" class="copyright__link">
-                <img src="img.png" alt="" width="100" height="50">
-              </a>
-          </div>
-        </footer>
+      <footer class="footer">
+          <a href="#" class="hashtag">#visitsedona</a>
+             <ul class="social">
+               <li class="social__item">
+                  <a class="social__link  social__link--tw" href="#"><span class="visually-hidden">Twitter</span></a>
+               </li>
+               <li class="social__item">
+                  <a class="social__link  social__link--fb" href="#"><span class="visually-hidden">Facebook</span></a>
+               </li>
+               <li class="social__item">
+                  <a class="social__link  social__link--yt" href="#"><span class="visually-hidden">YouTube</span></a>
+               </li>
+               <li class="social__item">
+                  <a class="social__link  social__link--htmlacademy" href="#"><span class="visually-hidden">HTMLACADEMY</span></a>
+               </li>
+             </ul>
+       </footer>
 
 
     </div>
