@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
 
-    <div class="wrapper">
-      <img class="showcase-bg" src="img/showcase-bg.jpg" width="1200" height="800" alt="Sedona">
-      <header class="header">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Фото и видео</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Карта штата</a></li>
-            <li class="menu__item"><a href="catalog.html" class="menu__link">Гостиницы</a></li>
-          </ul>
-        </nav>
-        <a class="logo" href="index.html">
-            <img class="logo__img" src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo">
-          </a>
-      </header>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
 
-      <main class="page-main">
-          <section class="showcase">
-              <h1 class="visually-hidden">Седона, штат Аризона</h1>
-              <img class="showcase__img" src="img/welcome.png" alt="Добро пожаловать в Седону">
-            </section>
-      <article class="aboutus">
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Фото и видео</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Карта штата</a></li>
+          <li class="menu__item"><a href="catalog.html" class="menu__link">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logo-sedona.svg" width="138" height="70" alt="Sedona logo">
+      </a>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main-logo"></div>
+      <section class="showcase">
+        <h1 class="visually-hidden">Седона, штат Аризона</h1>
+      </section>
+      <section class="aboutus">
         <header class="aboutus__header">
           <h1 class="aboutus__title">Седона - небольшой городок в аризоне,заслуживающий большего!</h1>
           <p class="aboutus__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
-      </article>
+      </section>
 
       <div class="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне!</p>
+        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          гостиниц в седоне!</p>
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
         <form action="/echo" method="POST">
           <div class="search-form__row">
@@ -46,52 +48,54 @@
             <button type="button" class="search-form__calendar">Календарь</button>
           </div>
           <div class="search-form__row">
-              <label for="to" class="search-form__1">Дата выезда:</label>
-              <input id="to" type="text" class="search-form__2">
-              <button type="button" class="search-form__calendar">Календарь</button>
+            <label for="to" class="search-form__1">Дата выезда:</label>
+            <input id="to" type="text" class="search-form__2">
+            <button type="button" class="search-form__calendar">Календарь</button>
           </div>
           <div class="search-form__row">
-              <div class="search-form__col">
-                  <label for="number_1" class="search-form__1">Взрослые:</label>
-                  <div class="number">
-                    <button class="number1_minus"><span class="visually-hidden">Уменьшить</span></button>
-                    <input id="number_1" type="text" class="number__field">
-                    <button class="number1_plus"><span class="visually-hidden">Увеличить</span></button>
-                  </div>
-              </div>
-              <div class="search-form__col">
-                  <label for="number_2" class="search-form__1">Дети:</label>
-                  <div class="number">
-                    <button class="number1_minus"><span class="visually-hidden">Уменьшить</span></button>
-                    <input id="number_2" type="text" class="number__field">
-                    <button class="number1_plus"><span class="visually-hidden">Увеличить</span></button>
-                  </div>
+            <div class="search-form__col">
+              <label for="number_1" class="search-form__1">Взрослые:</label>
+              <div class="number">
+                <button class="number1_minus" aria-label="Уменьшить"></button>
+                <input id="number_1" type="text" class="number__field">
+                <button class="number1_plus" aria-label="Увеличить"></button>
               </div>
             </div>
-            </form>
+            <div class="search-form__col">
+              <label for="number_2" class="search-form__1">Дети:</label>
+              <div class="number">
+                <button class="number1_minus" aria-label="Уменьшить"></button>
+                <input id="number_2" type="text" class="number__field">
+                <button class="number1_plus" aria-label="Увеличить"></button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
-      </main>
+    </main>
 
-        <footer class="footer">
-          <a href="#" class="hashtag">#visitsedona</a>
-             <ul class="social">
-               <li class="social__item">
-                  <a class="social__link  social__link--tw" href="#"><span class="visually-hidden">Twitter</span></a>
-               </li>
-               <li class="social__item">
-                  <a class="social__link  social__link--fb" href="#"><span class="visually-hidden">Facebook</span></a>
-               </li>
-               <li class="social__item">
-                  <a class="social__link  social__link--yt" href="#"><span class="visually-hidden">YouTube</span></a>
-               </li>
-               <li class="social__item">
-                  <a class="social__link  social__link--htmlacademy" href="#"><span class="visually-hidden">HTMLACADEMY</span></a>
-               </li>
-             </ul>
-       </footer>
-
-
+    <footer class="footer">
+      <a href="#" class="hashtag">#visitsedona</a>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="#" aria-label="Twitter"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" aria-label="Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--yt" href="#" aria-label="YouTube"></a>
+        </li>
+      </ul>
+      <div class="copyright__html">
+        <p class="copyright__item">
+          <b class="copyright__name">Website by</b>
+          <a class="copyright__link--html" href="https://htmlacademy.ru/"></a>
+        </p>
       </div>
+    </footer>
 
-  </body>
+  </div>
+</body>
+
 </html>
