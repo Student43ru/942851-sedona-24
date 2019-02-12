@@ -1,0 +1,92 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-main-logo {  
+  width: 1200px;
+  height: 500px;
+  background-color: #ffffff;  
+  background-image: url("../img/intro-welcome.svg"), url("../img/intro-mask.svg"), url("../img/showcase-bg.jpg"); 
+  background-position: 50% 80px, 50% 460px, 50% -60px; 
+  background-repeat: no-repeat,no-repeat,no-repeat; 
+  background-size: 460px 355px, 1200px 60px, 1200px 800px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__item {
+  margin: 4px 3px;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: #6da1c2;
+}
+
+.social__link:hover {
+  background-color: #667ec0;
+}
+
+.social__link:active {
+  background-color: #5497bd;
+}
+
+.social__link:active::before {
+  opacity: 0.4;
+}
+
+.social__link::before {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.social__link--tw::before {
+  top: 17px;
+  left: 15px;
+  width: 17px;
+  height: 15px;
+  background: url(../img/twitter-icon.svg) no-repeat center;
+}
+
+.social__link--fb::before {
+  top: 13px;
+  left: 17px;
+  width: 12px;
+  height: 22px;
+  background: url(../img/fb-icon.svg) no-repeat center;
+}
+
+.social__link--yt::before {
+  top: 16px;
+  left: 13px;
+  width: 20px;
+  height: 16px;
+  background: url(../img/youtube-icon.svg) no-repeat center;
+}
+
+.copyright__link--html {
+  color: #000000;
+  background-image: url("../img/htmlacademy-logo.svg");
+  background-position: 50% 100%;
+  width: 115px;
+  height: 41px;
+  display: block;
+  margin-top: -37px;
+}

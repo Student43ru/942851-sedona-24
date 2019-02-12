@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -43,33 +45,34 @@
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
         <form action="/echo" method="POST">
           <div class="search-form__row">
-            <label for="from" class="search-form__1">Дата заезда:</label>
-            <input id="from" type="text" class="search-form__2">
+            <label for="search-date-arrive">>Дата заезда:</label>
+            <input id="search-date-arrive" type="text" class="search_dates">
             <button type="button" class="search-form__calendar">Календарь</button>
           </div>
           <div class="search-form__row">
-            <label for="to" class="search-form__1">Дата выезда:</label>
-            <input id="to" type="text" class="search-form__2">
+            <label for="search-date-departure">Дата выезда:</label>
+            <input id="search-date-departure" type="text" class="search_dates">
             <button type="button" class="search-form__calendar">Календарь</button>
           </div>
           <div class="search-form__row">
             <div class="search-form__col">
-              <label for="number_1" class="search-form__1">Взрослые:</label>
+              <label for="search-grownups" class="search-form__1">Взрослые:</label>
               <div class="number">
-                <button class="number1_minus" aria-label="Уменьшить"></button>
-                <input id="number_1" type="text" class="number__field">
-                <button class="number1_plus" aria-label="Увеличить"></button>
+                <button class="number_minus" aria-label="Уменьшить"></button>
+                <input class="search_people" id="search-grownups" type="text" class="number__field">
+                <button class="number_plus" aria-label="Увеличить"></button>
               </div>
             </div>
             <div class="search-form__col">
-              <label for="number_2" class="search-form__1">Дети:</label>
+              <label for="search-children" class="search-form__1">Дети:</label>
               <div class="number">
-                <button class="number1_minus" aria-label="Уменьшить"></button>
-                <input id="number_2" type="text" class="number__field">
-                <button class="number1_plus" aria-label="Увеличить"></button>
+                <button class="number2_minus" aria-label="Уменьшить"></button>
+                <input class="search_people" id="search-children" type="text" class="number__field">
+                <button class="number_plus" aria-label="Увеличить"></button>
               </div>
             </div>
           </div>
+          <button class="search_button" type="submit"> Найти</button>
         </form>
       </div>
     </main>
