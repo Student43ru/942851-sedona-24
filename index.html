@@ -1,104 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <header class="header">
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Фото и видео</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Карта штата</a></li>
-          <li class="menu__item"><a href="catalog.html" class="menu__link">Гостиницы</a></li>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css">
+    </head>
+    <body>
+    <div class="wrapper">
+      <header class="main_header">
+       <nav class="navigation">
+       <ul class="navigation_list">
+         <li class="navigation_item"><a class="navigation_link" href="#">Информация</a></li>
+         <li class="navigation_item"><a class="navigation_link" href="#">Фото и Видео</a></li>
+         <li class="navigation_item"><a class="navigation_link" href="#">Карта штата</a></li>
+         <li class="navigation_item"><a class="navigation_link" href="catalog.html">Гостиницы</a></li>
         </ul>
+        <img class="logo_img" src="img/logo-sedona.svg" width="138" height="70" alt="Sedona logo">
       </nav>
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="img/logo-sedona.svg" width="138" height="70" alt="Sedona logo">
-      </a>
-    </header>
+    </header> 
+   
+  
+    <main class="container">
+      <div class="main_content_logo"></div>
+      <section class="features">
+        <b class="features_title">Седона-небольшой городок в Аризоне,заслуживающий большего</b>
+      <h3 class="features_description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</h3>
+      
+      </section>  
+    <section class="search"> 
+      <b class="search_interested">Заинтересовались?</b>
+          <p class="search_point"> Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+       <button class="search_hotel" type="button">Поиск гостиницы в Седоне</button>
+   
 
-    <main class="page-main">
-      <div class="page-main-logo"></div>
-      <section class="showcase">
-        <h1 class="visually-hidden">Седона, штат Аризона</h1>
-      </section>
-      <section class="aboutus">
-        <header class="aboutus__header">
-          <h1 class="aboutus__title">Седона - небольшой городок в аризоне,заслуживающий большего!</h1>
-          <p class="aboutus__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </header>
-      </section>
-
-      <div class="search">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-          гостиниц в седоне!</p>
-        <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
-        <form action="/echo" method="POST">
-          <div class="search-form__row">
-            <label for="search-date-arrive">>Дата заезда:</label>
-            <input id="search-date-arrive" type="text" class="search_dates">
-            <button type="button" class="search-form__calendar">Календарь</button>
-          </div>
-          <div class="search-form__row">
-            <label for="search-date-departure">Дата выезда:</label>
-            <input id="search-date-departure" type="text" class="search_dates">
-            <button type="button" class="search-form__calendar">Календарь</button>
-          </div>
-          <div class="search-form__row">
-            <div class="search-form__col">
-              <label for="search-grownups" class="search-form__1">Взрослые:</label>
-              <div class="number">
-                <button class="number_minus" aria-label="Уменьшить"></button>
-                <input class="search_people" id="search-grownups" type="text" class="number__field">
-                <button class="number_plus" aria-label="Увеличить"></button>
-              </div>
-            </div>
-            <div class="search-form__col">
-              <label for="search-children" class="search-form__1">Дети:</label>
-              <div class="number">
-                <button class="number2_minus" aria-label="Уменьшить"></button>
-                <input class="search_people" id="search-children" type="text" class="number__field">
-                <button class="number_plus" aria-label="Увеличить"></button>
-              </div>
-            </div>
-          </div>
-          <button class="search_button" type="submit"> Найти</button>
-        </form>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <a href="#" class="hashtag">#visitsedona</a>
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link social__link--tw" href="#" aria-label="Twitter"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#" aria-label="Facebook"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--yt" href="#" aria-label="YouTube"></a>
-        </li>
-      </ul>
-      <div class="copyright__html">
-        <p class="copyright__item">
-          <b class="copyright__name">Website by</b>
-          <a class="copyright__link--html" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+     <form class="search_form" action="https://echo.htmlacademy.ru" method="post"> 
+      
+      <p class="search_item">
+        <label for="search_date_arrive">Дата заезда:</label>
+        <input class="search_dates_item" id="search_date_arrive" type="text" name="date" value="" placeholder="24 апреля 2017">
+        <button class="calendar" type="button"> </button>
+      </p>
+     
+      <p class="search_item">
+        <label for="search_date_departure">Дата выезда:</label>
+        <input class="search_dates_item" id="search_date_departure" type="text" name="date" value="" placeholder="4 июля 2017">
+        <button class="calendar" type="button"> </button>
+      </p>
+      <div class="search_item_people">
+     <p class="search_item">
+        <label for="search_grownups">Взрослые:</label>
+        <button class="search_item_minus" type="button"> </button>
+        <input class="search_people_item" id="search_grownups" type="text" name="quantity" value="" placeholder="2">
+        <button class="search_item_plus" type="button"> </button>
+       
+        <label for="search_children">Дети:</label>
+        <button class="search_item_minus2" type="button"> </button>
+        <input class="search_people_item" id="search_children" type="text" name="quantity" value="" placeholder="0">
+        <button class="search_item_plus" type="button"> </button>
         </p>
-      </div>
-    </footer>
-
-  </div>
-</body>
-
-</html>
+        </div>
+    
+        <button class="search_item_find" type="submit">Найти</button>
+      </form>
+ 
+   
+    </section>
+  </main>
+   
+<footer class="main_footer"> 
+    <div class="container">
+       <p class="footer_tagline">#VISITSEDONA</p>
+    
+       <ul class="social">
+          <li class="social_item social_link--tw">
+			  <a class="social_button" href="#"></a>
+			  </li>
+          <li class="social_item social_link--fb">
+			  <a class="social_button" href="#"></a>
+			  </li>
+          <li class="social_item social_link--yt">
+			  <a class="social_button" href="#"></a>
+		</li>
+       </ul> 
+    <div class="footer_copyright_move">
+     <p class="footer_copyright">
+        <b class="footer_name">Website by</b>
+        <a class="logo_footer" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+     </p>  
+    </div>
+    </div>
+     </footer>
+   </div>     
+ </body>
+</html>      
