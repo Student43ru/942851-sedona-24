@@ -624,67 +624,76 @@ button.search_item_plus {
 }
 
 .social {
-	text-align: center;
-	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	margin: 0 auto;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
 	padding: 0;
-}
-
-.social_item {
+	width: 33.33%;
+	-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+			flex-grow: 1;	
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+  }
+  
+  .social__item {
+	margin: 4px 3px;
+  }
+  
+  .social__link {
+	position: relative;
+	display: block;
 	width: 46px;
 	height: 48px;
-	margin-right: 5px;
-}
-
-.social_link--tw .social_button {
-	background-image: url("../img/twitter-icon.svg");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+	background-color: #81b3d2;
+  }
+  
+  .social__link:hover {
+	background-color: #669ec0;
+  }
+  
+  .social__link:active {
+	background-color: #5496bd;
+  }
+  
+  .social__link:active::before {
+	opacity: 0.3;
+  }
+  
+  .social__link::before {
+	content: "";
+	position: absolute;
+	display: block;
+  }
+  
+  .social__link--tw::before {
+	top: 17px;
+	left: 15px;
 	width: 17px;
 	height: 15px;
-	display: flex;
-	margin-left: 16px;
-	margin-top: 15px;
-}
-
-.social_link--fb .social_button {
-	background-image: url("../img/fb-icon.svg");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+	background: url(../img/twitter-icon.svg) no-repeat center;
+  }
+  
+  .social__link--fb::before {
+	top: 13px;
+	left: 17px;
 	width: 12px;
 	height: 22px;
-	display: flex;
-	margin-left: 16px;
-	margin-top: 12px;
-}
-
-.social_link--yt .social_button {
-	background-image: url("../img/youtube-icon.svg");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+	background: url(../img/fb-icon.svg) no-repeat center;
+  }
+  
+  .social__link--yt::before {
+	top: 16px;
+	left: 13px;
 	width: 20px;
 	height: 16px;
-	display: flex;
-	margin-left: 14px;
-	margin-top: 15px;
-}
-
-.social_link--tw:active .social_button, .social_link--fb:active .social_button, .social_link--yt:active .social_button {
-	opacity: 0.3;
-}
-
-.social_item {
-	background-color: #81b3d2;
-}
-
-.social_item:hover, .social_item:focus {
-	background-color: #669ec0;
-}
-
-.social_item:active {
-	background-color: #5496bd;
-}
+	background: url(../img/youtube-icon.svg) no-repeat center;
+  }
 
 .footer_copyright_move {
 	color: #000000;
