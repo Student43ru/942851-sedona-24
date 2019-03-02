@@ -27,12 +27,115 @@
       </nav>
     </header>
 
-    <section class="hotels_info">
+    <section class="hotels-filters">
+      <h1 class="visually-hidden">Поиск отелей в Седоне</h1>
+      <form class="filters" action="catalog.html" method="get">
+        <div class="filters__layout">
+          <div class="filters__options">
+            <fieldset class="filters__fieldset">
+              <legend class="filters__legend">Инфраструктура:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input class="filters__checkbox" type="checkbox" name="pool" id="pool" checked>
+                  <label class="filters__checkbox-label" for="pool">Бассейн</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox" type="checkbox" name="parking" id="parking">
+                  <label class="filters__checkbox-label" for="parking">Парковка</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                  <label class="filters__checkbox-label" for="wi-fi">WI-FI</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filters__options">
+            <fieldset class="filters__fieldset">
+              <legend class="filters__legend">Тип жилья:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input class="filters__checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                  <label class="filters__checkbox-label" for="hotel">Гостиница</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox" type="checkbox" name="motel" id="motel" checked>
+                  <label class="filters__checkbox-label" for="motel">Мотель</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                  <label class="filters__checkbox-label" for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filters__price">
+            <fieldset class="filters__price-fieldset">
+              <legend class="filters__price-legend">Стоимость в сутки (p):</legend>
+              <div class="filters__price-inputs">
+                <label class="filters__price-label  filters__price-label--min">
+                  От <input class="filters__price-input  filters__price-input--min" type="text" name="min-price-input"
+                    value="0">
+                </label>
+                <label class="filters__price-label  filters__price-label--max">
+                  До <input class="filters__price-input  filters__price-input--max" type="text" name="max-price-input"
+                    value="3000">
+                </label>
+              </div>
+              <div class="filters__price-range">
+                <div class="filters__price-scale">
+                  <div class="filters__price-scale-value"></div>
+                </div>
+                <span class="filters__price-control  filters__price-control--min" tabindex="0">Минимум</span>
+                <span class="filters__price-control  filters__price-control--max" tabindex="0">Максимум</span>
+              </div>
+            </fieldset>
+            <div class="filters__apply">
+              <button class="filters__show  filter-btn" type="submit" name="search-show">Показать</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="hotels">
+      <h2 class="visually-hidden">Результаты поиска отелей в Седоне</h2>
+      <section class="hotels__sort">
+        <div class="hotels__sort-title">
+          <h3 class="visually-hidden">Сортировка результатов</h3>
+          <div class="hotels__sort-result-title">Найдено: <span class="hotels__sort-result-count"
+              id="hotels-count">3</span></div>
+        </div>
+        <div class="hotels__sort-types">
+          <ul class="hotels__sort-list">
+            <li class="hotels__sort-list-title">
+              Сортировка:
+            </li>
+            <li class="hotels__sort-item">
+              <a class="hotels__sort-link  hotels__sort-link--active" href="#">По цене</a>
+            </li>
+            <li class="hotels__sort-item">
+              <a class="hotels__sort-link" href="#">По типу</a>
+            </li>
+            <li class="hotels__sort-item">
+              <a class="hotels__sort-link" href="#">По рейтингу</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hotels__updown-sort">
+          <ul class="hotels__updown-sort-list">
+            <li class="hotels__updown-sort-item">
+              <a class="hotels__updown-sort-link  hotels__updown-sort-link--up" href="#">По возрастанию</a>
+            </li>
+            <li class="hotels__updown-sort-item">
+              <a class="hotels__updown-sort-link  hotels__updown-sort-link--down  hotels__updown-sort-link--active"
+                href="#">По убыванию</a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <ul class="hotels_info_list">
-
         <li class="hotels_info_item">
-
           <div class="item_wrapper">
             <img class="hotels_info_img" src="img/hotel1.jpg" width="135" height="90" alt="Amara Resort and Spa">
             <div class="hotel_description">
@@ -116,8 +219,9 @@
           </div>
         </li>
       </ul>
-
     </section>
+    </main>
+
     <footer class="main_footer">
       <div class="container">
         <p class="footer_tagline">#VISITSEDONA</p>
@@ -143,6 +247,9 @@
       </div>
     </footer>
   </div>
+  <script type="text/javascript" type=""
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

@@ -25,55 +25,121 @@
     </header>
 
 
-    <main class="container">
+    <main class="page-main">
       <div class="main_content_logo"></div>
-      <section class="features">
-        <b class="features_title">Седона-небольшой городок в Аризоне,заслуживающий большего</b>
-        <h3 class="features_description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</h3>
 
+      <section class="about">
+        <div class="about__info">
+          <h2 class="about__title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h2>
+          <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </section>
+      <section class="reason  reason--first">
+        <div class="reason__info">
+          <h2 class="reason__title">Настоящий городок</h2>
+          <span class="reason__number">— №1 —</span>
+          <p class="reason__text">Седона — не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
+        </div>
+        <div class="reason__img  reason__img--first">
+          <img src="img/sedona-photo1.jpg" width="800" height="401" alt="Седона">
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Особенности Седоны</h2>
+        <ul class="features__list">
+          <li class="features__item  features__item--house">
+            <h3 class="features__item-title">Жилье</h3>
+            <p class="features__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="features__item  features__item--food">
+            <h3 class="features__item-title">Еда</h3>
+            <p class="features__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="features__item  features__item--souvenirs">
+            <h3 class="features__item-title">Сувениры</h3>
+            <p class="features__item-text">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reason  reason--second">
+        <div class="reason__img  reason__img--second">
+          <img src="img/sedona-photo2.jpg" width="800" height="400" alt="Седона">
+        </div>
+        <div class="reason__info">
+          <h2 class="reason__title">Там есть Мост&nbsp;дьявола</h2>
+          <span class="reason__number">— №2 —</span>
+          <p class="reason__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </section>
+      <section class="reasons">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <ul class="reasons__list">
+          <li class="reasons__item">
+            <h3 class="reasons__item-title">Небольшая площадь</h3>
+            <span class="reasons__item-number">— №3 —</span>
+            <p class="reasons__item-text">Все достопримечательности<br> находятся очень близко</p>
+          </li>
+          <li class="reasons__item">
+            <h3 class="reasons__item-title">Красивая дорога</h3>
+            <span class="reasons__item-number">— №4 —</span>
+            <p class="reasons__item-text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+          </li>
+          <li class="reasons__item">
+            <h3 class="reasons__item-title">Мало туристов</h3>
+            <span class="reasons__item-number">— №5 —</span>
+            <p class="reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
       <section class="search">
         <b class="search_interested">Заинтересовались?</b>
         <p class="search_point"> Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <button class="search_hotel" type="button">Поиск гостиницы в Седоне</button>
 
+        <div class="search__map-wrapper">
+          <div class="search__form-wrapper">
+            <button class="search__open-btn  btn  btn--large  btn--action" type="button" name="search-open">Поиск
+              гостиницы в Седоне</button>
+            <form class="search-form" action="hotel-seach" method="get">
+              <p class="search_item">
+                <label for="search_date_arrive">Дата заезда:</label>
+                <input class="search_dates_item" id="search_date_arrive" type="text" name="date" value=""
+                  placeholder="24 апреля 2017">
+                <button class="calendar" type="button"> </button>
+              </p>
 
-        <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="search_item">
+                <label for="search_date_departure">Дата выезда:</label>
+                <input class="search_dates_item" id="search_date_departure" type="text" name="date" value=""
+                  placeholder="4 июля 2017">
+                <button class="calendar" type="button"> </button>
+              </p>
+              <div class="search_item_people">
+                <p class="search_item">
+                  <label for="search_grownups">Взрослые:</label>
+                  <button class="search_item_minus" type="button"> </button>
+                  <input class="search_people_item" id="search_grownups" type="text" name="quantity" value=""
+                    placeholder="2">
+                  <button class="search_item_plus" type="button"> </button>
 
-          <p class="search_item">
-            <label for="search_date_arrive">Дата заезда:</label>
-            <input class="search_dates_item" id="search_date_arrive" type="text" name="date" value=""
-              placeholder="24 апреля 2017">
-            <button class="calendar" type="button"> </button>
-          </p>
+                  <label for="search_children">Дети:</label>
+                  <button class="search_item_minus2" type="button"> </button>
+                  <input class="search_people_item" id="search_children" type="text" name="quantity" value=""
+                    placeholder="0">
+                  <button class="search_item_plus" type="button"> </button>
+                </p>
+              </div>
 
-          <p class="search_item">
-            <label for="search_date_departure">Дата выезда:</label>
-            <input class="search_dates_item" id="search_date_departure" type="text" name="date" value=""
-              placeholder="4 июля 2017">
-            <button class="calendar" type="button"> </button>
-          </p>
-          <div class="search_item_people">
-            <p class="search_item">
-              <label for="search_grownups">Взрослые:</label>
-              <button class="search_item_minus" type="button"> </button>
-              <input class="search_people_item" id="search_grownups" type="text" name="quantity" value=""
-                placeholder="2">
-              <button class="search_item_plus" type="button"> </button>
-
-              <label for="search_children">Дети:</label>
-              <button class="search_item_minus2" type="button"> </button>
-              <input class="search_people_item" id="search_children" type="text" name="quantity" value=""
-                placeholder="0">
-              <button class="search_item_plus" type="button"> </button>
-            </p>
+              <button class="search-form__submit  btn  btn--medium" type="submit" name="search-submit">Найти</button>
+            </form>
           </div>
-
-          <button class="search_item_find" type="submit">Найти</button>
-        </form>
-
-
+          <section class="map">
+            <h2 class="visually-hidden">Расположение Седоны на карте</h2>
+            <img class="map__img" src="img/map.png" width="1200" height="593" alt="Седона на карте">
+            <div class="map__content" id="map"><span class="visually-hidden">Седона на интерактивной карте</span></div>
+          </section>
+        </div>
       </section>
     </main>
 
@@ -102,6 +168,9 @@
       </div>
     </footer>
   </div>
+  <script type="text/javascript" type=""
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
