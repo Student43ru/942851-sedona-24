@@ -14,7 +14,6 @@ body {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
@@ -22,6 +21,11 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
 }
 
 .button {
@@ -296,6 +300,10 @@ a {
 	margin: 0;
 }
 
+.features__item:nth-child(1n+4) {
+	display: none;
+}
+
 .reasons {
 	padding: 47px 0 60px;
 	background-color: #f2f2f2;
@@ -326,6 +334,10 @@ a {
 	max-width: 160px;
 	font-size: 21px;
 	line-height: 21px;
+}
+
+.reasons__item:nth-child(1n+4) {
+	display: none;
 }
 
 .reasons__item-text {
@@ -721,27 +733,20 @@ a {
 }
 
 .search_interested {
+	font-size: 30px;
+	color: black;
+	line-height: 36px;
+	margin-bottom: 23px;
 	text-align: center;
-	font-size: 21px;
-	line-height: 26px;
-	background-color: #ffffff;
-	margin: auto;
-	display: block;
-	margin-bottom: 35px;
-	padding: 0 50px;
-	width: 305px;
 }
 
 .search_point {
 	text-align: center;
 	font-size: 14px;
-	line-height: 26px;
-	font-weight: 400;
-	margin: auto;
-	display: flex;
-	margin-bottom: 50px;
-	padding: 10px;
-	width: 440px;
+	line-height: 24px;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 45px;
 }
 
 .search_form {
@@ -780,12 +785,13 @@ a {
 
 .search_item {
 	padding: 0px 10px;
+	font-weight: 700;
 	width: 568px;
 	align-items: center;
 	display: flex;
 }
 
-.search_dates_item, .search_dates_item::placeholder, .search_people_item, .search_people_item::placeholder {
+.search_dates_item1, .search_dates_item1::placeholder, .search_dates_item2, .search_dates_item2::placeholder, .search_people_item, .search_people_item::placeholder {
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -794,7 +800,7 @@ a {
 	border: 0;
 }
 
-.search_dates_item {
+.search_dates_item1, .search_dates_item2 {
 	background-color: #f2f2f2;
 	width: 333px;
 	height: 38px;
@@ -835,12 +841,12 @@ a {
 	background-position: 0 0;
 }
 
-input#search_date_arrive.search_dates_item {
+.search_dates_item1 {
 	margin-left: 21px;
 	padding-left: 13px;
 }
 
-input#search_date_departure.search_dates_item {
+.search_dates_item2 {
 	margin-left: 17px;
 	padding-left: 13px;
 }
@@ -1076,6 +1082,7 @@ button.search_item_plus {
 .hotel_item_link {
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: 700;
 	color: #ffffff;
 }
 
@@ -1190,6 +1197,7 @@ button.search_item_plus {
 	line-height: 26px;
 	margin: 0;
 	margin-top: 10px;
+	font-weight: 700;
 }
 
 .social {
@@ -1271,6 +1279,7 @@ button.search_item_plus {
 
 .footer_name {
 	margin-left: -224px;
+	font-weight: normal;
 }
 
 .logo_footer {
@@ -1447,6 +1456,8 @@ button.search_item_plus {
 
 .filters__item+.filters__item {
 	margin-top: 23px;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .filters__price-inputs {
@@ -1615,6 +1626,10 @@ button.search_item_plus {
 
 .hotels__sort-item+.hotels__sort-item {
 	margin-left: 34px;
+}
+
+.hotels__sort-item:nth-child(1n+4) {
+	display: none;
 }
 
 .hotels__updown-sort {
@@ -1894,6 +1909,10 @@ button.search_item_plus {
 
 .social__item {
 	margin: 4px 3px;
+}
+
+.social__item:nth-child(1n+4) {
+	display: none;
 }
 
 .social__link {

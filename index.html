@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 
@@ -30,7 +30,7 @@
 
       <section class="about">
         <div class="about__info">
-          <h2 class="about__title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h2>
+          <h1 class="about__title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h1>
           <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
@@ -104,34 +104,35 @@
             <form class="search-form" action="hotel-seach" method="get">
               <p class="search_item">
                 <label for="search_date_arrive">Дата заезда:</label>
-                <input class="search_dates_item" id="search_date_arrive" type="text" name="date" value=""
+                <input class="search_dates_item1" id="search_date_arrive" type="text" name="date" value=""
                   placeholder="24 апреля 2017">
-                <button class="calendar" type="button"> </button>
+                <button class="calendar" title="Дата заезда" type="button"> </button>
               </p>
 
               <p class="search_item">
                 <label for="search_date_departure">Дата выезда:</label>
-                <input class="search_dates_item" id="search_date_departure" type="text" name="date" value=""
+                <input class="search_dates_item2" id="search_date_departure" type="text" name="date" value=""
                   placeholder="4 июля 2017">
-                <button class="calendar" type="button"> </button>
+                <button class="calendar" title="Дата выезда" type="button"> </button>
               </p>
               <div class="search_item_people">
                 <p class="search_item">
                   <label for="search_grownups">Взрослые:</label>
-                  <button class="search_item_minus" type="button"> </button>
+                  <button class="search_item_minus" title="Уменьшить" type="button"> </button>
                   <input class="search_people_item" id="search_grownups" type="text" name="quantity" value=""
                     placeholder="2">
-                  <button class="search_item_plus" type="button"> </button>
+                  <button class="search_item_plus" title="Увеличить" type="button"> </button>
 
                   <label for="search_children">Дети:</label>
-                  <button class="search_item_minus2" type="button"> </button>
+                  <button class="search_item_minus2" title="Уменьшить" type="button"> </button>
                   <input class="search_people_item" id="search_children" type="text" name="quantity" value=""
                     placeholder="0">
-                  <button class="search_item_plus" type="button"> </button>
+                  <button class="search_item_plus" title="Увеличить" type="button"> </button>
                 </p>
               </div>
 
-              <button class="search-form__submit  btn  btn--medium" type="submit" name="search-submit">Найти</button>
+              <button class="search-form__submit  btn  btn--medium" type="submit" title="Найти"
+                name="search-submit">Найти</button>
             </form>
           </div>
           <section class="map">
@@ -149,13 +150,15 @@
 
         <ul class="social">
           <li class="social__item">
-            <a class="social__link  social__link--tw" href="https://twitter.com"></a>
+            <a class="social__link  social__link--tw" href="https://twitter.com" title="Наша страница в Twitter"></a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--fb" href="https://www.facebook.com/"></a>
+            <a class="social__link  social__link--fb" href="https://www.facebook.com/"
+              title="Наша страница в Facebook"></a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--yt" href="https://www.youtube.com/"></a>
+            <a class="social__link  social__link--yt" href="https://www.youtube.com/"
+              title="Наша страница на YouTube"></a>
           </li>
         </ul>
 
@@ -168,8 +171,9 @@
       </div>
     </footer>
   </div>
-  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
-  <script src="js/script.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
