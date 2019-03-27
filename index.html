@@ -4,10 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -26,13 +25,13 @@
 
 
     <main class="page-main">
+      <h1 class="visually-hidden">Особенности Седоны</h1>
       <div class="main_content_logo"></div>
 
       <section class="about">
-        <div class="about__info">
-          <h1 class="about__title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h1>
-          <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
+        <p>Седона — небольшой городок в Аризоне, зaслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h2 class="visually-hidden">О седоне</h2>
       </section>
       <section class="reason  reason--first">
         <div class="reason__info">
@@ -40,9 +39,7 @@
           <span class="reason__number">— №1 —</span>
           <p class="reason__text">Седона — не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
         </div>
-        <div class="reason__img  reason__img--first">
-          <img src="img/sedona-photo1.jpg" width="800" height="401" alt="Седона">
-        </div>
+        <img class="reason__img" src="img/photo_sedona.jpg" width="800" height="256" alt="Седона">
       </section>
       <section class="features">
         <h2 class="visually-hidden">Особенности Седоны</h2>
@@ -62,9 +59,7 @@
         </ul>
       </section>
       <section class="reason  reason--second">
-        <div class="reason__img  reason__img--second">
-          <img src="img/sedona-photo2.jpg" width="800" height="400" alt="Седона">
-        </div>
+        <img class="reason__img" src="img/photo_devil's_bridge.jpg" width="800" height="256" alt="Седона">
         <div class="reason__info">
           <h2 class="reason__title">Там есть Мост&nbsp;дьявола</h2>
           <span class="reason__number">— №2 —</span>
@@ -131,8 +126,7 @@
                 </p>
               </div>
 
-              <button class="search-form__submit  btn  btn--medium" type="submit" title="Найти"
-                name="search-submit">Найти</button>
+              <button class="button search-button" type="submit">Найти</button>
             </form>
           </div>
           <section class="map">
@@ -145,29 +139,27 @@
     </main>
 
     <footer class="main_footer">
-      <div class="container">
-        <p class="footer_tagline">#VISITSEDONA</p>
+      <p class="footer_tagline">#VISITSEDONA</p>
 
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link  social__link--tw" href="https://twitter.com" title="Наша страница в Twitter"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link  social__link--fb" href="https://www.facebook.com/"
-              title="Наша страница в Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link  social__link--yt" href="https://www.youtube.com/"
-              title="Наша страница на YouTube"></a>
-          </li>
-        </ul>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link  social__link--tw" href="https://twitter.com" title="Наша страница в Twitter"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link  social__link--fb" href="https://www.facebook.com/"
+            title="Наша страница в Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link  social__link--yt" href="https://www.youtube.com/"
+            title="Наша страница на YouTube"></a>
+        </li>
+      </ul>
 
-        <div class="footer_copyright_move">
-          <p class="footer_copyright">
-            <b class="footer_name">Website by</b>
-            <a class="logo_footer" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-          </p>
-        </div>
+      <div class="footer_copyright_move">
+        <p class="footer_copyright">
+          <b class="footer_name">Website by</b>
+          <a class="logo_footer" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        </p>
       </div>
     </footer>
   </div>
